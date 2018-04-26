@@ -6,7 +6,6 @@ import { styles } from './style'
 import { Convert } from '../../Helpers/Transform'
 import { Actions } from 'react-native-router-flux'
 export const Flight = (props) => {
-    console.log(props.flights)
     const { origin, destination, departureTime, landingTime, price } = props.flights
     return (
         <Card styleCard={styles.cardStyle}>

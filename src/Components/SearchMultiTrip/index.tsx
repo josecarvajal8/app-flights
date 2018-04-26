@@ -7,7 +7,6 @@ import { Card } from '../Card'
 import { Convert } from '../../Helpers/Transform'
 export const SearchMulti = (props) => {
     const { cleanRoutes, getAirports, departCity, arriveCity, departDate, routes, setRoutes, multyTrip } = props
-    console.log(routes)
     async function datePicker() {
         const { setDateDepart } = props
         try {
@@ -68,7 +67,7 @@ export const SearchMulti = (props) => {
                         <Text style={styles.textTripsStyle}> {item.origin}</Text>
                         <Icon name={'airplane-takeoff'} style={styles.iconCardTrips} />
                         <Text style={styles.textTripsStyle}> {item.destiny}</Text>
-                        <Text style={styles.textTripsStyle}> {(item.date)}</Text>
+                        <Text style={styles.textTripsStyle}> {item.date}</Text>
                     </Card>}
                     extraData={props}
                     horizontal={false} />

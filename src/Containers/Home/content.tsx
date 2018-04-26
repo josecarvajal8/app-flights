@@ -109,7 +109,6 @@ export default class Home extends Component {
                 Actions.result(data)
             })
         } else {
-            console.log('You should add at least one flight')
             ToastAndroid.show('You should add at least one flight', ToastAndroid.SHORT)
         }
     }
@@ -133,7 +132,6 @@ export default class Home extends Component {
                 break
             case arrive:
                 this.setState({ returningDate: date })
-                console.log(this.state)
                 break
             default:
                 break

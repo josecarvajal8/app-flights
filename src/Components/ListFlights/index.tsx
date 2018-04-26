@@ -9,7 +9,6 @@ import { Card } from '../Card'
 import { styles } from './style'
 export const ListFlights = (props) => {
     const { flights, arrayKeys, moreThanOne } = props
-    console.log('more', moreThanOne)
     function flight(data) {
         return (
             <FlatList
@@ -32,7 +31,7 @@ export const ListFlights = (props) => {
                     renderItem={({ item }) => <Flight flights={item} />}
                     keyExtractor={(item) => item._id}
                     horizontal={false}
-                />
+                    showsVerticalScrollIndicator={false}/>
             )
         } else {
             return (
@@ -53,14 +52,17 @@ export const ListFlights = (props) => {
                     <Text style={styles.title}>{'Flights'}</Text>
                 </View>
             </LinearGradient>
+            <View style={styles.listContainer}>
             {moreThanOne && <FlatList
                 data={arrayKeys}
                 renderItem={({ item }) => <Card styleCard={styles.cardStyle}>
                     <Text style={styles.textCardContainer}>{Convert.converTextCap(item)}</Text>
                     {Convert.checkArray(flights[item]) ? flight(item) : noResult()}
                 </Card>}
-                horizontal={false} />}
+                horizontal={false}
+                showsVerticalScrollIndicator={false}/>}
             {!moreThanOne && oneWayFlight()}
+            </View>
         </View>
     )
 }

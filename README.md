@@ -47,7 +47,7 @@ Debe tener  la variables de entorno de android y el SDK del mismo
 1.0.0
 
 # Aplicacion final
-![](https://media.giphy.com/media/Bo1Ejs4zY0BqFCG90S/giphy.gif) ![](https://media.giphy.com/media/BpRpnKX3h3EF8gQpZx/giphy.gif) ![](https://media.giphy.com/media/AFD9WTWH70Dq9XAegy/giphy.gif)
+![](https://media.giphy.com/media/kwCKVHcfAIhvooOgAS/giphy.gif) ![](https://media.giphy.com/media/iqkL1Cm1IS9E1P3nvC/giphy.gif) 
 
 
 # Autores

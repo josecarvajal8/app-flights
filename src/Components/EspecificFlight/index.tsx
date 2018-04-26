@@ -67,7 +67,7 @@ export const EspecificFlight =
                             <Icon name={'seat-recline-normal'} style={styles.iconOtherDetail} />{capacity}</Text>
                     </View>
                 </Card>
-                {Convert.checkArray(segments) && segments.length > 0 ? stopsOver() : console.log('no stops')}
+                {Convert.checkArray(segments) && segments.length > 0 ? stopsOver() : null}
             </View>
         )
     }

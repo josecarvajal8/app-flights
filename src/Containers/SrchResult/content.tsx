@@ -7,7 +7,6 @@ export default class SrchResult extends Component {
         super(props)
     }
     render() {
-        console.log('result', this.props)
         const {arrayKeys, flights, moreThanOne} = this.props
         return (
             <View>

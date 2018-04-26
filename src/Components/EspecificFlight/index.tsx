@@ -61,7 +61,8 @@ export const EspecificFlight =
                         <Text style={styles.textOtherDetail}>
                             <Icon name={'airplane'} style={styles.iconOtherDetail} />{company.toUpperCase()}</Text>
                         <Text style={styles.textOtherDetail}>
-                            <Icon name={'clock'} style={styles.iconOtherDetail} />{duration}</Text>
+                            <Icon name={'clock'} style={styles.iconOtherDetail} />
+                            {Convert.minToH(parseInt(duration))}</Text>
                         <Text style={styles.textOtherDetail}>
                             <Icon name={'seat-recline-normal'} style={styles.iconOtherDetail} />{capacity}</Text>
                     </View>

@@ -152,12 +152,12 @@ export const styles = {
         fontWeight: 'bold',
         color: 'rgba(255,255,255,1)',
         marginTop: 5,
-        marginLeft: 10
+        marginLeft: 30
     },
     iconCardTrips: {
         fontSize: 15,
         color: 'rgba(255,255,255,1)',
-        marginLeft: 10,
+        marginLeft: 20,
         marginTop: 5
     }
 }

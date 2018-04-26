@@ -46,5 +46,8 @@ export const styles = {
         fontWeight: 'bold',
         marginLeft: 50,
         marginTop: 20
+    },
+    listContainer: {
+        height: 520
     }
 }

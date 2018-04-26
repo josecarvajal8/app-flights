@@ -1,4 +1,5 @@
-export const styles = {
+import { getComponentStyle } from '../../Helpers/Stylus'
+export const styles = getComponentStyle({
     destinyTrip: {
         width: 360,
         height: 215
@@ -84,13 +85,13 @@ export const styles = {
     },
     viewRoutes: {
         width: 360,
-        height: 185,
+        height: 230,
         justifyContent: 'flex-start',
         backgroundColor: 'rgba(255,255,255,1)'
     },
     iconPassanger: {
         width: 50,
-        height: 50,
+        height: 0,
         backgroundColor: 'rgba(0,0,0,1)',
         marginLeft: 100,
         marginTop: 40
@@ -160,4 +161,4 @@ export const styles = {
         marginLeft: 20,
         marginTop: 5
     }
-}
+})

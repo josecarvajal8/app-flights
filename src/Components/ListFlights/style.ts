@@ -1,4 +1,5 @@
-export const styles = {
+import {getComponentStyle} from '../../Helpers/Stylus'
+export const styles = getComponentStyle({
     cardStyle: {
         width: 360,
         height: 200,
@@ -50,4 +51,4 @@ export const styles = {
     listContainer: {
         height: 520
     }
-}
+})

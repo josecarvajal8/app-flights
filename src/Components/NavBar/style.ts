@@ -1,4 +1,5 @@
-export const styles = {
+import {getComponentStyle} from '../../Helpers/Stylus'
+export const styles = getComponentStyle({
     fatherContainer: {
         height: 128,
         width: 360
@@ -43,4 +44,4 @@ export const styles = {
         opacity: 0,
         backgroundColor: 'rgba(255, 255, 255,.3)'
     }
-}
+})

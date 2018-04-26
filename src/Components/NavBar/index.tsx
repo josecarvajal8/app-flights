@@ -3,6 +3,7 @@ import { View, Text, StatusBar, TouchableOpacity, ViewStyle } from 'react-native
 import LinearGradient from 'react-native-linear-gradient'
 import * as Animatable from 'react-native-animatable'
 import { styles } from './style'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { buttonAnimation } from '../../Helpers/Animated'
 
 export const NavBar = ({ changeTabs, roundTrip, multiTrip, oneWay }) => {
@@ -40,7 +41,7 @@ export const NavBar = ({ changeTabs, roundTrip, multiTrip, oneWay }) => {
                         style={styles.circle as ViewStyle}
                     >
                     </Animatable.View>
-                    <Text style={styles.tabsTitle}>{'Round Trip'}</Text>
+                    <Text style={styles.tabsTitle}>{'Round Trip '} <Icon name={'autorenew'}/></Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => {
                     changeTabs(2)
@@ -53,7 +54,7 @@ export const NavBar = ({ changeTabs, roundTrip, multiTrip, oneWay }) => {
                         style={styles.circle as ViewStyle}
                     >
                     </Animatable.View>
-                    <Text style={styles.tabsTitle}>{'One way'}</Text>
+                    <Text style={styles.tabsTitle}>{'One way '}<Icon name={'airplane-takeoff'}/></Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => {
                     changeTabs(3)
@@ -66,7 +67,7 @@ export const NavBar = ({ changeTabs, roundTrip, multiTrip, oneWay }) => {
                         style={styles.circle as ViewStyle}
                     >
                     </Animatable.View>
-                    <Text style={styles.tabsTitle}>{'Multi Destiny'}</Text>
+                    <Text style={styles.tabsTitle}>{'Multi Destiny '}<Icon name={'ray-start-end'}/></Text>
                 </TouchableOpacity>
             </View>
         </LinearGradient>

@@ -1,4 +1,5 @@
-export const styles = {
+import {getComponentStyle} from '../../Helpers/Stylus'
+export const styles = getComponentStyle({
     cardStyle: {
         width: 340,
         height: 140,
@@ -70,4 +71,4 @@ export const styles = {
     textDates: {
         fontSize: 10
     }
-}
+})

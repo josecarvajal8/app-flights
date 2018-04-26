@@ -1,4 +1,5 @@
-export const styles = {
+import {getComponentStyle} from '../../Helpers/Stylus'
+export const styles = getComponentStyle({
     navBar: {
         height: 88,
         width: 360
@@ -119,4 +120,4 @@ export const styles = {
         fontWeight: 'bold',
         marginLeft: 10
     }
-}
+})

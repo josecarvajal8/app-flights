@@ -31,7 +31,7 @@ export const SearchRound = (props) => {
                         <Text style={styles.cityNameText}>{departCity.city}</Text>
                     </Card>
                 </TouchableOpacity>
-                <Icon name={'airplane'} style={styles.iconPlane} />
+                <Icon name={'repeat-once'} style={styles.iconPlane} />
                 <TouchableOpacity onPress={() => getAirports('arrive')} style={styles.btnTo}>
                     <Card styleCard={styles.cardStyle}>
                         <Text style={styles.textDestiny}>{arriveCity.iata}</Text>
